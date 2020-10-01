@@ -1,0 +1,8 @@
+{% extends 'home/notas.html' %} {% load static %} {% block content1 %}
+<p></p>
+{% endblock %} {% block content2 %}
+<form method="POST">
+  {% csrf_token %}{{User.as_p}}
+  <button type="submit" class="submit-btn">Update</button>
+</form>
+{% endblock %}.

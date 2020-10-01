@@ -1,0 +1,38 @@
+{% extends 'login/index2.html' %}
+<!DOCTYPE html>
+{% load static %} {% block cabeza %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="{% static 'css/changeUsername.css' %}" />
+  <title>Form Change email</title>
+</head>
+{% endblock %} {% block cuerpo %}
+
+<body>
+  <h4 id="subtitle">Change email</h4>
+  <form action="{% url 'home' %}" method="POST" class="input-group1">
+    {% csrf_token %}
+    <button type="submit" class="submit-btn" id="Change_password">Home</button>
+  </form>
+  <form action="" method="POST" id="change-pass">
+    {% csrf_token %}
+    <div id="changePass2"> {{User.email}}</div>
+    <div id="changePass2">{{User.email2}}</div>
+    <div id="changePass2">{{User.email3}}</div>
+    <button type="submit" class="submit-btn" id="save">Save</button>
+  </form>
+  <form action="{% url 'settings' %}" method="POST" class="input-group1">
+    {% csrf_token %}
+    <button type="submit" class="submit-btn" id="cancelar">Cancel</button>
+  </form>
+  <div>
+
+  </div>
+</body>
+
+</html>
+{% endblock %}

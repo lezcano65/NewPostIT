@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/*body {
+  background-image: url('blurbg.jpeg');
+}*/
+html {
+  background: url("../images/blurbg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.form-new-email {
+  /*width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;*/
+  width: 380px;
+  height: 510px;
+  position: relative;
+  margin: 7% auto;
+  background: #30323d;
+  padding-top: 30px;
+  box-shadow: 10px 10px 10px #151515;
+  overflow: hidden;
+}
+
+.form-new-email h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.controls {
+  width: 100%;
+  height: 61px;
+  background: transparent;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+.input-field input[type="email"],
+input[type="password"],
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font: 10px;
+}
+
+.form-new-email a:hover {
+  box-shadow: 0 0 6px 3px #151515;
+}
+
+.form-new-email .botons {
+  width: 40%;
+  background: #151515;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+#butons {
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+h4 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+
+#cancel {
+
+    width: 180px;
+    height: 17px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#Change_password {
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+.form-box {
+    width: 380px;
+    height: 550px;
+}

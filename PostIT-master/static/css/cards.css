@@ -1,0 +1,128 @@
+body {
+  background: url("../images/blurbg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: auto;
+}
+
+/* Set gray background color and 100% height */
+/* .sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+} */
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+
+  .row.content {
+    height: auto;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#card {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+}
+
+#titulo {
+  margin-top: 18px;
+  left: 0px;
+  justify-content: center;
+}
+
+#titulocard {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#contenido {
+  justify-content: center;
+}
+
+li {
+  font-size: 25px;
+}
+
+
+#add {
+  margin-left: 10px;
+}
+
+#botonBuscar {
+  margin-left: 10px;
+}
+
+#color {
+  text-align: right;
+}
+
+#contentCard {
+  width: 18rem;
+}
+
+#buttons {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#texto {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 10px;
+}
+
+#fecha {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#boxCard{
+  padding: 0px;
+  margin: 10px;
+  width: 400px;
+}
+

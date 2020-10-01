@@ -1,0 +1,31 @@
+{% extends 'home/notas.html' %} {% load static %} {% block content1 %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{% static 'css/delete.css' %}" />
+    <title>Form Delete Nota</title>
+</head>
+{% endblock %} {% block content2 %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm" id="card">
+            <div class="card text-white bg-dark mb-3" id="contentCard">
+                <form action="" method="POST" id="delete" class="input-group">
+                    {% csrf_token %}
+                    <div class="card-header" id="titulocard">{{nota.titulo}}</div>
+                    <div id="sure">¿Are you sure to delete this note?</div>
+                    <div id="buttons">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <a href="{% url 'home' %}" class="btn btn-warning" role="button" aria-pressed="true">Cancel</a>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,183 @@
+body {
+    background: url("../images/blurbg.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: auto;
+}
+
+/* Set gray background color and 100% height */
+/* .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  } */
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+}
+
+input#titulocard div{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#titulo {
+    margin-top: 18px;
+    left: 0px;
+    justify-content: center;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+#contenido {
+    justify-content: center;
+}
+
+li {
+    font-size: 25px;
+}
+
+
+#add {
+    margin-left: 10px;
+}
+
+#botonBuscar {
+    margin-left: 2px;
+}
+
+#color {
+    text-align: right;
+}
+
+#contentCard {
+    width: 18rem;
+    margin-top: 10px;
+}
+
+#buttonss {
+    padding: 10px;
+    text-align: center;
+}
+
+#texto {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px;
+}
+
+#fecha {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#id_descripcion {
+    width: 265px;
+    height: 300px;
+}
+
+#descripcion {
+    margin: 10px;
+    width: 265px;
+    height: auto;
+    font-size: 10px;
+}
+
+/* textarea {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textarea;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+    padding: 2px; */
+
+textarea {
+    background: transparent;
+    color: white;
+    border: 0 none;
+    width: 100%;
+    font-size: 2em;
+    height: 100%;
+
+}
+
+input {
+    background: transparent;
+    color: #ffffff;
+    color: solid;
+}
+
+#colorbutton {
+    padding: 10px;
+}

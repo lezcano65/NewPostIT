@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'css/mystyle2.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&amp;display=swap" rel="stylesheet" />
+  {% block cabeza %}
+  <title>Login and Registration - PostIt</title>
+  {% endblock %}
+</head>
+
+<body>
+  <div class="container">
+    <div id="form-box" class="form-box">
+      <h1 id="title">PostIT</h1>
+      {% block cuerpo %}
+      <div class="button-box">
+        <div id="btn"></div>
+        <button id="login-btn" type="button" class="toogle-btn" onclick="login()">
+          Log in
+        </button>
+        <button id="register-btn" type="button" class="toogle-btn" onclick="register()">
+          Sign up
+        </button>
+      </div>
+      <form method="POST" id="login" class="input-group">
+        {% csrf_token %} {{log_in.username}} {{log_in.password}}
+        <button type="submit" class="submit-btn">Enter account</button>
+      </form>
+      <form action="" method="POST" id="register" class="input-group">
+        {% csrf_token %} {{newUser.username}}
+        {{newUser.email}}{{newUser.password1}}{{newUser.password2}}
+        <button type="submit" class="submit-btn">
+          Complete registration
+        </button>
+      </form>
+      {% endblock %}
+    </div>
+  </div>
+
+  <script src="{% static 'js/login.js' %}"></script>
+</body>
+
+</html>

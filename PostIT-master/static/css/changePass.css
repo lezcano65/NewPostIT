@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/*body {
+  background-image: url('blurbg.jpeg');
+}*/
+html {
+  background: url("../images/blurbg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.form-new-pass {
+  /*width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;*/
+  width: 380px;
+  height: 510px;
+  position: relative;
+  margin: 7% auto;
+  background: #30323d;
+  padding-top: 30px;
+  box-shadow: 10px 10px 10px #151515;
+  overflow: hidden;
+}
+
+.form-new-pass h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.controls {
+  width: 100%;
+  height: 61px;
+  background: transparent;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+.input-field input[type="email"],
+input[type="password"],
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font: 10px;
+}
+
+.form-new-pass a:hover {
+  box-shadow: 0 0 6px 3px #151515;
+}
+
+.form-new-pass .botons {
+  width: 40%;
+  background: #151515;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+#butons {
+  text-align: center;
+}
+
+#title {
+  margin-block-end: 0px;
+}
+
+#subtitle {
+  text-align: center;
+  padding: 0px;
+  margin-block-end: 0px;
+  color: white;
+}
+
+#titleChange {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 0px;
+  margin-block-end: 0px;
+}
+
+#form {
+  margin: 0px;
+  padding-top: 0px;
+  height: 1000px;
+}
+
+#cancel {
+
+
+  height: 17px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 30px;
+}
+
+
+
+.changePass {
+  color: white;
+  padding-left: 25px;
+  margin
+}
+
+input#id_old_password div,
+.changePass2 input div {
+
+  color: white;
+  width: 161px;
+  height: 41px;
+  border-bottom: 1px solid white;
+}
+
+.changePass {
+  text-align: center;
+  font-size: 20px;
+}
+
+#changePass2 {
+  margin-left: 26px;
+  text-align: center;
+}
+
+.clearfix-padding {
+  padding: 0px;
+}
+
+#Change_password {
+  justify-content: center;
+  text-align: center;
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+.submit-btn {
+  justify-content: center;
+  text-align: center;
+  padding-left: 15px;
+  margin-left: 15px;
+  width: 85%;
+}
+
+#change-pass {
+  margin-left: 0px;
+  padding-top: 10;
+}
+
+#save {
+  padding: 10px;
+  margin-top: 7px;
+  margin-left: 40px;
+  width: 300px;
+
+}
+
+#cancelar {
+  padding: 10px;
+  margin-left: 40px;
+  width: 300px;
+
+}
+
+#oldPass {
+  padding: 10px;
+  margin-left: 25px
+}
+
+#newPass {
+  padding: 10px;
+  margin-left: 25px
+}
+
+#repeatPass {
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-left: 25px
+}

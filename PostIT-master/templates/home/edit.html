@@ -1,0 +1,48 @@
+{% extends 'home/notas.html' %} {% load static %} {% block content1 %}
+<html lang="en">
+<script src="{% static 'js/jscolor.js' %}"> </script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="{% static 'css/edit.css' %}" />
+  <title>Form Change nota</title>
+</head>
+{% endblock %} {% block content2 %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm" id="card">
+      <div class="card text-white bg-dark mb-3" id="contentCard">
+        <form action="" method="POST" id="login">
+          {% csrf_token %}
+          <div class="card-header" id="titulocard">{{nota.titulo}}</div>
+          <div class="card-header" id="fecha">{{nota.fecha}}</div>
+
+          <div id="fondo" onclick="changeColor()">
+            <script>
+              jscolor.presets.default = {
+                previewPosition: 'right',
+                mode: 'HVS',
+                closeButton: true,
+                buttonColor: 'rgba(255,8,8,1)',
+                controlBorderColor: 'rgba(0,0,0,1)'
+              };
+            </script>
+
+            <input data-jscolor={{nota.color}}>
+          </div>
+
+          <div id="descripcion">{{nota.descripcion}}</div>
+          <div id="buttonss">
+            <button type="submit" class="btn btn-success">Save</button>
+            <a href="{% url 'home' %}" class="btn btn-danger active" role="button" aria-pressed="true">Cancel</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
