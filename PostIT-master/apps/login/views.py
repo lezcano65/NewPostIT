@@ -14,12 +14,12 @@ from django.contrib import messages
 
 
 def indexPage(request):
-    try:
-        if request.method == "POST":
-            log_in = LoginForm(request.POST)
-            model_username = request.POST.get('username')
-            model_password = request.POST.get('password')
-            if (model_username != None) and (model_password != None):
+    if request.method == "POST":
+        log_in = LoginForm(request.POST)
+        model_username = request.POST.get('username')
+        model_password = request.POST.get('password')
+        if (model_username != None) and (model_password != None):
+            try:
                 if log_in.is_valid():
                     user = authenticate(username=model_username,
                                         password=model_password)
@@ -34,11 +34,11 @@ def indexPage(request):
                 else:
                     messages.success(request, 'data error :')
                     return redirect('index')
-            else:
-                print("")
+            except AttributeError:
                 return redirect('index')
-    except AttributeError:
-        return redirect('index')
+        else:
+            print("")
+            return redirect('index')
     newUser = registerUser(request.POST)
     model = User
     if newUser.is_valid():
@@ -46,10 +46,12 @@ def indexPage(request):
         model.email = newUser.cleaned_data["email"]
         model.password1 = newUser.cleaned_data["password1"]
         model.password2 = newUser.cleaned_data["password2"]
-        if (type(model.password) != int) and (model.password != model.email) and (model.password != model.username) and (len(model.password1) > 7) and (model.password1 == model.password2):
+        print("entro")
+        if (model.password1 != model.email) and (model.password1 != model.username) and (len(model.password1) > 7) and (model.password1 == model.password2):
             grabar = User(username=model.username, email=model.email,
                           password=model.password1)
             grabar.save()
+            print("grabo")
             user = User.objects.get(username=model.username)
             user.is_staff = True
             user.is_active = True

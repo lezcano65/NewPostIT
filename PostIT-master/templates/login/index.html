@@ -19,7 +19,7 @@
   </div>
   <div class="main-container">
     <div class="column">
-      <h1 id="bg-message">¡Crea y almacena tus propias notas!</h1>
+      <h1 id="bg-message">Create and store your own notes!</h1>
     </div>
     <div class="column">
       <div class="container">
@@ -31,23 +31,23 @@
           <h1 id="title">PostIT</h1>
           <div class="button-box">
             <div id="toogle-btn"></div>
-            <button id="login-btn" type="button" class="toogle-btn" onclick="login()">Ingresar</button>
-            <button id="register-btn" type="button" class="toogle-btn" onclick="register()">Registrarse</button>
+            <button id="login-btn" type="button" class="toogle-btn" onclick="login()">Log In</button>
+            <button id="register-btn" type="button" class="toogle-btn" onclick="register()">Create User</button>
           </div>
           <form method="POST" id="login" class="input-group">
-            {% csrf_token %} 
-            {{log_in.username}} 
+            {% csrf_token %}
+            {{log_in.username}}
             {{log_in.password}}
-            <button type="submit" class="submit-btn" id="submit-btn-login">Ingresar a mi cuenta</button>
+            <button type="submit" class="submit-btn" id="submit-btn-login">Log in to My Account</button>
           </form>
           <form action="" method="POST" id="register" class="input-group">
-            {% csrf_token %} 
+            {% csrf_token %}
             {{newUser.username}}
             {{newUser.email}}
             {{newUser.password1}}
             {{newUser.password2}}
             <button type="submit" class="submit-btn" id="submit-btn-register">
-              Completar registro
+              Complete registration
             </button>
           </form>
         </div>
